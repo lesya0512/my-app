@@ -20,7 +20,10 @@ function App() {
   return (
     <div className="App">
       <Header links={links} bgcolor="#ffffff"/>
-      <Main img="https://glasnarod.ru/wp-content/uploads/2022/11/photo_2022-11-26_13-22-18-886x0-c-default.jpg" maintext="Lorem ipsum, dolor sit amet" text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga tenetur iste in a dignissimos optio voluptatibus molestiae magnam veniam, ipsa quo dolorum! Nam, voluptatum pariatur ad odio totam ipsa quisquam!" btn="кнопка"/>
+      <Main img="https://glasnarod.ru/wp-content/uploads/2022/11/photo_2022-11-26_13-22-18-886x0-c-default.jpg" 
+      maintext="Lorem ipsum, dolor sit amet" 
+      text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga tenetur iste in a dignissimos optio voluptatibus molestiae magnam veniam, ipsa quo dolorum! Nam, voluptatum pariatur ad odio totam ipsa quisquam!" 
+      btn="кнопка"/>
       {/* <h1>{counter}</h1>
       <button onClick={() => minus()}>-</button>
       <button onClick={() => plus()}>+</button> */}
