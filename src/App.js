@@ -1,5 +1,6 @@
 import{ useState } from 'react';
 import './App.css';
+import Calculator from './components/calculator/calculator';
 import Header from './components/header/header';
 import Main from './components/main/main';
 
@@ -27,6 +28,9 @@ function App() {
       {/* <h1>{counter}</h1>
       <button onClick={() => minus()}>-</button>
       <button onClick={() => plus()}>+</button> */}
+
+
+      <Calculator />
     </div>
   );
 }
