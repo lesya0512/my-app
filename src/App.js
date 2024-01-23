@@ -6,17 +6,14 @@ import Main from './components/main/main';
 
 function App() {
   let links = ['Главная', 'Работы', 'Отзывы',];
-
   const [counter, setCounter] = useState(0);
-
   const plus = () => {
     setCounter(counter + 1);
   }
-
   const minus = () => {
     setCounter(counter - 1);
   }
-
+  const [isShow, setIsShow] = useState(false);
   
   return (
     <div className="App">
@@ -29,8 +26,11 @@ function App() {
       <button onClick={() => minus()}>-</button>
       <button onClick={() => plus()}>+</button> */}
 
+      <button onClick={() => { setIsShow(!isShow) }}>
+        { isShow ? 'Скрыть' : 'Показать' }
+      </button>
 
-      <Calculator />
+      { isShow && <Calculator /> }
     </div>
   );
 }
